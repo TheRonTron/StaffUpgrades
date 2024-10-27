@@ -47,6 +47,7 @@ namespace StaffUpgrades
                 var IceShardsStaff = PrefabManager.Instance.GetPrefab("StaffIceShards").GetComponent<ItemDrop>().m_itemData.m_shared;
                 var Blizzard = IceShardsStaff.m_secondaryAttack;
 
+                IceShardsStaff.m_attack.m_attackStartNoise = 8;
                 IceShardsStaff.m_aiAttackRange = 15;
                 IceShardsStaff.m_aiAttackRangeMin = 1;
                 IceShardsStaff.m_aiAttackInterval = 6;
